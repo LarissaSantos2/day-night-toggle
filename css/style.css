@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.outer {
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* input troca de cor */
+#switch:checked ~ .outer {
+  background-color: #4d0b36;
+}
+
+.outer .content {
+  display: flex;
+  max-width: 620px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* input troca de cor */
+#switch:checked ~ .outer .content {
+  background-color: #4d0b36;
+}
+
+/* toggle */
+.content .toggle {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #4d0b36;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* input troca de cor */
+#switch:checked ~ .outer .toggle {
+  background-color: #fff;
+}
+
+.toggle .circle {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 3px;
+  transition: all 0.3s ease;
+}
+
+/* input */
+#switch:checked ~ .outer .circle {
+  margin-left: 22px;
+  background-color: #4d0b36;
+}
+
+/* imagem - perfil */
+.content .image-box {
+  height: 232px;
+  width: 200px;
+  border-radius: 12px;
+  background-color: #4d0b36;
+  padding: 3px;
+}
+
+/* input troca de cor */
+#switch:checked ~ .outer .image-box {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.content .image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #fff;
+}
+
+/* input troca de cor */
+#switch:checked ~ .outer .image-box img {
+  border-color: transparent;
+}
+
+/* detalhes - informações pessoais */
+.content .details {
+  width: 58%;
+  margin: 10px 0px 20px 20px;
+}
+
+/* input troca de cor */
+#switch:checked ~ .outer .details {
+  color: #fff;
+}
+
+/* informações pessoais */
+.content .details .name {
+  font-size: 23px;
+}
+
+.content .details .job {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content .details .description {
+  font-size: 13px;
+  text-align: justify;
+  margin-top: 8px;
+}
+
+/* botão saber mais */
+.content .details button {
+  display: block;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  padding: 6px 14px;
+  margin-top: 16px;
+  background-color: #4d0b36;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* input troca de cor */
+#switch:checked ~ .outer button {
+  color: #4d0b36;
+  background-color: #fff;
+}
+
+/* hover botão */
+.details button:hover {
+  transform: scale(0.97);
+}
+
+/* redes sociais */
+.content .details .media-icons {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.details .media-icons a {
+  display: inline-flex;
+  margin: 0 4px;
+  color: #4d0b36;
+  opacity: 0.7;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* input troca de cor */
+#switch:checked ~ .outer .media-icons a {
+  color: #fff;
+  opacity: 1;
+}
+
+/* efeito hover */
+.details .media-icons a:hover {
+  opacity: 1;
+}
+
+/* input não visível */
+#switch {
+  display: none;
+}
