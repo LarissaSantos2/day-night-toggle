@@ -20,6 +20,3 @@ Feito com **HTML e CSS puro**, com design responsivo e elementos estilizados, in
 
 ```bash
 https://larissasantos2.github.io/day-night-toggle/
-
-
-
